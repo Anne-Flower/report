@@ -17,6 +17,7 @@
 
 ### Utiliser le design pattern Factory ###
 
-- Créer une factory qui détermine dynamiquement le type de notification à envoyer.
-- Les types de notifications disponibles sont : sms, email, et push.
-- Ne pas instancier les classes spécifiques directement dans le code principal.
+- Avoir une factory qui produit différents types de widgets (boutons, champs de texte, etc.).
+- Chaque plateforme (Desktop, Mobile) doit avoir sa propre implémentation concrète des widgets.
+- L'utilisateur doit pouvoir choisir dynamiquement la plateforme (Desktop ou Mobile).
+- La description du pattern (seul doc autorisé) : https://refactoring.guru/fr/design-patterns/factory-method
